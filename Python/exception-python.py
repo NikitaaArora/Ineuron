@@ -1,7 +1,9 @@
+
+#Exception Handling 
 import logging
 import os
 
-#create logger string
+#Using logging for exception handling #copying the same logging code from before. 
 logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
 
 
@@ -22,19 +24,19 @@ logging.basicConfig(
 
 logger = logging.getLogger("mylog") #creating an object of the log so that we can use it anytime. 
 
+def division(a,b):
+    try:
+
+        output = a/b
+        return output
+    except Exception as e:
+        logger.info(e)
+        adds = a+b
+        logger.info(adds)
+        
+    
+out = division(3,89)
 
 
-def add_number(a,b):
-    output = a+b
-    logger.info("Successfully executed")
-    return output
-
-
-num = add_number(3,4)
-
-print(num)
-
-logger.info("Code successfully executed")
-
-
+print(out)
 
