@@ -7,9 +7,10 @@ logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
 
 
 #this is the path where we want to save the log file. 
-log_path = "logs/running_log.log"
+log_folder = "logs"
+log_file = "/running_log.log"
 
-os.makedirs(log_path, exist_ok =True) #dont again create the folder if it already exists. 
+os.makedirs(log_folder, exist_ok=True) #dont again create the folder if it already exists. 
 
 
 
