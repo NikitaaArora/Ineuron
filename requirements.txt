@@ -2,4 +2,5 @@ numpy
 pandas
 matplotlib
 seaborn
-matplotlin_inline
+-- matplotlin_inline
+scipy
